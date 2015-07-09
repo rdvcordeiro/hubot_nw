@@ -5,7 +5,9 @@
   "author": "rdvcordeiro@gmail.com",
   "description": "hubot testing 1 time",
   "dependencies": {
+    "coffee-script": "^1.9.3",
     "hubot": "^2.13.2",
+    "hubot-azure-scripts": "^0.1.6",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.1.5",
     "hubot-google-translate": "^0.2.0",
