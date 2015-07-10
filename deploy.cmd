@@ -104,7 +104,9 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
+
 echo 4
+::copy "%DEPLOYMENT_TARGET%/node_modules/hubot/bin/hubot" "%DEPLOYMENT_TARGET%/node_modules/hubot/bin/hubot.coffee"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
