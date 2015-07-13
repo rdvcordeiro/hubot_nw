@@ -138,4 +138,5 @@ exit /b 1
 
 :end
 endlocal
+call "%DEPLOYMENT_TARGET%\bin\hubot -a slack"
 echo Finished successfully.
