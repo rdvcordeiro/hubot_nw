@@ -4,6 +4,10 @@
   "private": true,
   "author": "rdvcordeiro@gmail.com",
   "description": "hubot testing 1 time",
+  "repository" : {
+    "type": "git",
+    "url":  "https://github.com/rdvcordeiro/hubot_nw"
+  },
   "dependencies": {
     "coffee-script": "^1.9.3",
     "hubot": "^2.13.2",
