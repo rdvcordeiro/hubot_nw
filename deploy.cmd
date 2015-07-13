@@ -106,7 +106,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 )
 
 echo 4
-::copy "%DEPLOYMENT_TARGET%/node_modules/hubot/bin/hubot" "%DEPLOYMENT_TARGET%/node_modules/hubot/bin/hubot.coffee"
+copy "%DEPLOYMENT_TARGET%\node_modules\hubot\bin\hubot" "%DEPLOYMENT_TARGET%\node_modules\hubot\bin\hubot.coffee"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
