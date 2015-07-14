@@ -8,11 +8,8 @@
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
-	# HTMLParser  = require "htmlparser"
+module.exports = (robot) ->
 
-	module.exports = (robot) ->
-
-	   
    robot.hear /badger/i, (res) ->
      res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   
@@ -22,14 +19,13 @@
        res.reply "I'm afraid I can't let you do that."
      else
        res.reply "Opening #{doorType} doors"
-	 #  res.reply "Opening experiment #{doorType} doors"
   
    robot.hear /I like pie/i, (res) ->
-	    res.emote "makes a freshly baked pie"
-	 
-   lulz = ['lol', 'rofl', 'lmao','lol1', 'rofl1', 'lmao1','lol2', 'rofl2', 'lmao2']
+     res.emote "makes a freshly baked pie"
   
-   robot.respond /makes a random/i, (res) ->
+   lulz = ['lol', 'rofl', 'lmao']
+  
+   robot.respond /lulz/i, (res) ->
      res.send res.random lulz
   
    robot.topic (res) ->
@@ -58,10 +54,6 @@
      , 60 * 1000
   
    annoyIntervalId = null
-  
-   robot.respond /wtf/, (res) ->
-     res.send "VTC"
-     return
   
    robot.respond /annoy me/, (res) ->
      if annoyIntervalId
