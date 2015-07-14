@@ -108,6 +108,9 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 echo 4
 copy "%DEPLOYMENT_TARGET%\node_modules\hubot\bin\hubot" "%DEPLOYMENT_TARGET%\node_modules\hubot\bin\hubot.coffee"
 
+:: 5. Create App_Data from brain data
+IF NOT EXIST "%DEPLOYMENT_TARGET%\App_Data" MD "%DEPLOYMENT_TARGET%\App_Data"
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :: Post deployment stub
